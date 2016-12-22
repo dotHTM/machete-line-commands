@@ -5,11 +5,17 @@ pre, code{
 }
 
 pre{
-		border-radius: 0.5rem !important;
-	padding: 0.125rem !important;
+	border-radius: 0.5rem;
+	padding: 0.125rem;
 }
 
 b, i{
-	background-color: #dee8 !important;
+	background-color: #8884;
 }
 
+div:has(div){
+	background-color: red !important;
+	&:after{
+		content: "CSS layer 4 selectors!!!"
+	}
+}
