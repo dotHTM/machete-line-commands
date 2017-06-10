@@ -4,7 +4,7 @@ This is my general solution to most of the mazes in the Learn to Code 1 Swift Pl
 
 Early on, the isBlockedLeft and Right values are not available, so switch the commented out searchMove() and comment out the peakMove() line.
 
-On each puzzle, there is a gaurunteed number of gems and switches that will appear on the map. This needs to be entered at the bottom, where the solver object is initialized.
+On each puzzle, there is a gaurunteed number of gems and total switches that will appear on the map. This needs to be entered at the bottom, where the solver object is initialized. This solver will continue searching the game field until all switches are found (open and closed) since the state and locations may be randomized at run.
 
 On at least one puzzle, there is a sitiation where a series of objectives are placed away from the walls. For this situation, I advise zig-zagging, and then using the trackToWall() method before resuming searchAB(.left).
 
